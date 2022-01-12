@@ -13,7 +13,7 @@ A web blog application that displays users, their posts and comments.
 
 - **Ensure you have postgresql, nodejs, ruby and rails set up on your machine**
 - **To get a local copy of the repository please run the following commands on your terminal:**
-- **$ git clone https://github.com/see-why/hellorails.git**
+- **$ git clone https://github.com/see-why/railsblog**
 - **$ cd hellorails.**
 - **$ run `bundle install` to couple all dependacies**
 - **$ run `rails s`**
