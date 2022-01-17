@@ -4,6 +4,6 @@ class User < ApplicationRecord
   has_many :likes, through: :posts
 
   def most_recent_posts
-    User.posts.last(3)
+    posts.last(3)
   end
 end
