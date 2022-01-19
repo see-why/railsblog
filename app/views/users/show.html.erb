@@ -1,1 +1,10 @@
-<h1>Here is a list of details about a specific user</h1>
+<section>
+  <%= render @user %>
+  <div class="bio">
+    <h2>Bio</h2>
+    <p><%= @user.bio %></p>
+  </div>
+  <div class="user-posts">
+    <%= render @user.posts %>
+  </div>
+</section>
