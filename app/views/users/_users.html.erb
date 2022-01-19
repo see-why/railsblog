@@ -1,0 +1,10 @@
+<%= link_to(user) do %>
+<div class="user-div">
+  <div class="photo-div">
+    <img src="<%= user.photo %>">
+  </div>
+  <div class="user-details-div">
+    <p class="user-name-p"><%= user.name %></p>
+    <span class="user-posts-details">Number of posts <%= user.posts_counter %></span>
+  </div>
+</div>
