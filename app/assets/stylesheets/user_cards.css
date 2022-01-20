@@ -36,13 +36,13 @@
   font-size: 30px;
 }
 
+.user-posts-details {
+  align-self: self-end;
+}
+
 .user-name-h2:hover,
 .user-posts-details:hover {
   color: #a9a9a9;
-}
-
-.user-posts-details {
-  align-self: self-end;
 }
 
 .footer-div {
