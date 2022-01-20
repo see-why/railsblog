@@ -1,10 +1,11 @@
 <section>
   <%= render @user %>
-  <div class="bio">
+  <div class="user-bio">
     <h2>Bio</h2>
     <p><%= @user.bio %></p>
   </div>
   <div class="user-posts">
-    <%= render @user.posts %>
+    <%= render 'users/post' if @user.posts.last %>
   </div>
+  <%= button_to 'See all posts', user_posts_url(:user_id => @user.id), method: :get, class: 'user-post-buttons'  if @user.posts.last%>
 </section>
