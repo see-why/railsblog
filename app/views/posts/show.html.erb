@@ -1,9 +1,11 @@
 <section>
   <div class="post">
+    <div class="post-header-div"> 
+    <h2>Posts  #<%= @post_counter %> by <%= @user.name %></strong></h2>
+    <span>Comments <%= @post.comments_counter %> Likes <%= @post.likes_counter %></span>
+    </div>
     <h2><%= @post.title %></h2>
     <p><%= @post.text %></p>
   </div>
-
-  <%= render @post.comments %>
-
+  <div class="comments-div"><%= render @post.comments %></div>
 </section> 
