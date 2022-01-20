@@ -9,7 +9,35 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
+ *bbghu
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gill-sans');
+
+html {
+   box-sizing: border-box;
+ }
+ 
+body {
+  font-family: 'Lato', Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
