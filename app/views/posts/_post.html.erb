@@ -1,0 +1,11 @@
+<div class="all-post-div">
+  <%= link_to(user_post_path(@user, post,post_counter: post_counter+1)) do%>
+    <div class="post-div">
+      <p><strong>Post #<%= post_counter += 1 %></strong></p>
+      <h3><%= post.title %></h3>
+      <p> <%= post.text %> </p>
+      <span>Comments <%= post.comments_counter %> Likes <%= post.likes_counter %></span>
+    </div>
+    <div class="comments-div"><%= render post.most_recent_comments %></div>
+  <% end %>  
+</div>

@@ -9,7 +9,32 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
+ *bbghu
  *= require_tree .
  *= require_self
  */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}

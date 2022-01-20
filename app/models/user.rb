@@ -1,7 +1,7 @@
 class User < ApplicationRecord
-  has_many :posts
-  has_many :comments, through: :posts
-  has_many :likes, through: :posts
+  has_many :posts, foreign_key: 'author_id'
+  has_many :comments, foreign_key: 'author_id'
+  has_many :likes, foreign_key: 'author_id'
 
   def most_recent_posts
     posts.last(3)

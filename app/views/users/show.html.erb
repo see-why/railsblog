@@ -1,1 +1,11 @@
-<h1>Here is a list of details about a specific user</h1>
+<section>
+  <%= render @user %>
+  <div class="user-bio">
+    <h2>Bio</h2>
+    <p><%= @user.bio %></p>
+  </div>
+  <div class="user-posts">
+    <%= render 'users/post' if @user.posts.last %>
+  </div>
+  <%= button_to 'See all posts', user_posts_url(:user_id => @user.id), method: :get, class: 'user-post-buttons'  if @user.posts.last%>
+</section>
