@@ -4,6 +4,7 @@
       <p><strong>Post #<%= index + 1 %></strong></p>
       <h3><%= post.title %></h3>
       <p> <%= post.text %> </p>
+      <span>Comments <%= post.comments_counter %> Likes <%= likes_counter %></span>
     </div>
   <% end %>  
  <%= render post.five_recent_comments %>
