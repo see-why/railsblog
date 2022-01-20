@@ -1,0 +1,22 @@
+.post {
+  margin: 4% 10% 1% 10%;
+}
+
+.post,
+.comments-div {
+  border: 1px solid #000;
+  padding: 2%;
+}
+
+.post-header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.post-header-div h2, 
+.post-header-div span {
+  font-size: 15px;
+}
+
+

@@ -1,0 +1,52 @@
+.user-div,
+.user-details-div,
+.footer-div {
+  display: flex;
+}
+
+.user-div {
+  width: 80%;
+  height: 120px;
+  margin: 5% 10% 5% 10%;
+}
+
+.photo-div,
+.user-details-div {
+  border: 1px solid #000;
+}
+
+.photo-div {
+  border: 1px solid #000;
+  margin-right: 5%;
+  width: 25%;
+}
+
+.photo-div img {
+  height: 100%;
+  width: 100%;
+}
+
+.user-details-div {
+  flex-direction: column;
+  padding: 0% 5% 5%;
+  width: 65%;
+}
+
+.user-name-h2 {
+  font-size: 30px;
+}
+
+.user-name-h2:hover,
+.user-posts-details:hover {
+  color: #a9a9a9;
+}
+
+.user-posts-details {
+  align-self: self-end;
+}
+
+.footer-div {
+  background: #a9a9a9;
+  justify-content: end;
+  padding-right: 2%;
+}

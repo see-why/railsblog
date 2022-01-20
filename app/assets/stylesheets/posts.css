@@ -1,0 +1,22 @@
+.all-post-div {
+  margin: 5% 7%;
+  padding: 2%;
+}
+
+.post-div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  padding: 2%;
+}
+
+.post-div span {
+  align-self: end;
+}
+
+.user-post-buttons {
+  width: 100px;
+  align-self: center;
+  margin-top: 20px;
+}
+
