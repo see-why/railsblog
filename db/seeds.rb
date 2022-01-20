@@ -11,10 +11,10 @@ Post.destroy_all
 User.destroy_all
 
 
-Bruce = User.create!(name: 'Bruce Wayne', photo: Faker::LoremFlickr.image(size: "50x60") , bio: Faker::Lorem.paragraph, posts_counter: 3)
-Dick = User.create!(name: 'Dick Grayson', photo: Faker::LoremFlickr.image(size: "50x60"), bio: Faker::Lorem.paragraph, posts_counter: 0)
-Jason = User.create!(name: 'Jason Todd', photo: Faker::LoremFlickr.image(size: "50x60") , bio: Faker::Lorem.paragraph, posts_counter: 0)
-Tim = User.create!(name: 'Tim Drake', photo: Faker::LoremFlickr.image(size: "50x60") , bio: Faker::Lorem.paragraph, posts_counter: 0)
+Bruce = User.create!(name: 'Bruce Wayne', photo: Faker::LoremFlickr.image(size: "100x100") , bio: Faker::Lorem.paragraph, posts_counter: 3)
+Dick = User.create!(name: 'Dick Grayson', photo: Faker::LoremFlickr.image(size: "100x100"), bio: Faker::Lorem.paragraph, posts_counter: 0)
+Jason = User.create!(name: 'Jason Todd', photo: Faker::LoremFlickr.image(size: "100x100") , bio: Faker::Lorem.paragraph, posts_counter: 0)
+Tim = User.create!(name: 'Tim Drake', photo: Faker::LoremFlickr.image(size: "100x100") , bio: Faker::Lorem.paragraph, posts_counter: 0)
 
 post1 = Bruce.posts.create!(title: Faker::Lorem.sentence(word_count: 3, supplemental: false, random_words_to_add: 0).chop, text: Faker::Lorem.paragraph, comments_counter: 3, likes_counter: 1)
 post2 = Bruce.posts.create!(title: Faker::Lorem.sentence(word_count: 3, supplemental: false, random_words_to_add: 0).chop, text: Faker::Lorem.paragraph, comments_counter: 2, likes_counter: 1)
