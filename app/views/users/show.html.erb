@@ -5,7 +5,7 @@
     <p><%= @user.bio %></p>
   </div>
   <div class="user-posts">
-    <%= render 'users/post' if @user.posts.last %>
+    <%= render partial: "users/post", locals: {post: @user.posts.last} if any_posts?(@user) %>
   </div>
-  <%= button_to 'See all posts', user_posts_url(:user_id => @user.id), method: :get, class: 'user-post-buttons'  if @user.posts.last%>
+  <%= button_to 'See all posts', user_posts_url(:user_id => @user.id), method: :get, class: 'user-post-buttons'  if any_posts?(@user)%>
 </section>
