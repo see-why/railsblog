@@ -1,4 +1,9 @@
 <section>
+ <div class="flash">
+  <% flash.each do |name, msg| -%>
+    <%= content_tag :span, msg, class: name %>
+ <% end -%>
+</div>
   <div class="post">
     <div class="post-header-div"> 
     <h2>Posts  #<%= @post_counter %> by <%= @user.name %></strong></h2>
@@ -8,4 +13,5 @@
     <p><%= @post.text %></p>
   </div>
   <%= render @post.comments if any_comments?(@post) %>
+  <%= render "comments/form" %>
 </section>
