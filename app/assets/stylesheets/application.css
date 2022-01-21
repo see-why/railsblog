@@ -38,3 +38,13 @@ section {
   display: flex;
   flex-direction: column;
 }
+
+input[type="text" i],
+textarea {
+  margin: 5% 0%;
+}
+
+input[type="submit" i] {
+  align-self: center;
+}
+

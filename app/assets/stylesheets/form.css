@@ -1,0 +1,10 @@
+.form-section h1 {
+  align-self: center;
+}
+
+.post-form {
+  margin: 0% 20%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
