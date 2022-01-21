@@ -16,9 +16,8 @@ class PostsController < ApplicationController
 
   def create
     current_user = User.find(params[:user_id])
-    @post = current_user.posts.new(params.require(:post).permit(:title, :text).merge(user_id: current_user.id))
+    @post = current_user.posts.new(params.require(:post).permit(:title, :text).merge(author_id: current_user.id))
     if @post.save
-      @post.update_user_posts_counter
       flash[:success] = 'Created New Post succesfully'
       redirect_to [:user_posts]
     else
