@@ -22,6 +22,7 @@ class PostsController < ApplicationController
       flash[:success] = 'Created New Post succesfully'
       redirect_to [:user_posts]
     else
+      flash.now[:fail] = 'Failed to Create a New Post'
       redirect_to [:new_user_post]
     end
   end
