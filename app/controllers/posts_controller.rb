@@ -18,10 +18,10 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.new(params.require(:post).permit(:title, :text).merge(author_id: current_user.id))
     if @post.save
-      flash[:success] = 'Created New Post succesfully'
+      flash[:alert] = 'Created New Post succesfully'
       redirect_to [:user_posts]
     else
-      flash.now[:fail] = 'Failed to Create a New Post'
+      flash.now[:notice] = 'Failed to Create a New Post'
       redirect_to [:new_user_post]
     end
   end
