@@ -3,3 +3,9 @@
   margin-bottom: 10%;
   justify-content: center;
 }
+
+.create-post-link {
+  max-width: 100%;
+  margin: 0% 10%;
+  display: contents;
+}

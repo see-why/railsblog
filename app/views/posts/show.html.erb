@@ -1,4 +1,9 @@
 <section>
+ <div class="flash">
+  <% flash.each do |name, msg| -%>
+    <%= content_tag :span, msg, class: name %>
+ <% end -%>
+</div>
   <div class="post">
     <div class="post-header-div"> 
     <h2>Posts  #<%= @post_counter %> by <%= @user.name %></strong></h2>
@@ -6,6 +11,10 @@
     </div>
     <h2><%= @post.title %></h2>
     <p><%= @post.text %></p>
+    <%= link_to likes_create_path(post_id: @post.id.to_s,u_id: @user.id.to_s), method: :put, class: 'like' do %>
+      <i class="far fa-heart"></i>
+    <% end %>
   </div>
-  <div class="comments-div"><%= render @post.comments %></div>
+  <%= render @post.comments if any_comments?(@post) %>
+  <%= render "comments/form" %>
 </section>

@@ -1,0 +1,25 @@
+.success {
+  background-color: #99cd3242;
+  border: 1px solid yellowgreen;
+  padding: 0.4em;
+  border-radius: 0.4em;
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+}
+
+.fail {
+  background-color: #dc143c46;
+  padding: 0.4em;
+  border: 1px solid crimson;
+  border-radius: 0.4em;
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
