@@ -16,6 +16,7 @@ A web blog application that displays users, their posts and comments.
 - **$ git clone https://github.com/see-why/railsblog**
 - **$ cd hellorails.**
 - **$ run `bundle install` to couple all dependacies**
+- **$ run `rspec spec/models` to test application models**
 - **$ run `rails s`**
 
 👤 **Cyril Iyadi**

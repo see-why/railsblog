@@ -1,4 +1,4 @@
-.success {
+.alert {
   background-color: #99cd3242;
   border: 1px solid yellowgreen;
   padding: 0.4em;
@@ -7,7 +7,7 @@
   animation-fill-mode: forwards;
 }
 
-.fail {
+.notice {
   background-color: #dc143c46;
   padding: 0.4em;
   border: 1px solid crimson;
