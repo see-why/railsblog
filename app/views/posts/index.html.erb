@@ -1,4 +1,9 @@
 <section>
+  <div class="flash">
+    <% flash.each do |name, msg| -%>
+      <%= content_tag :span, msg, class: name %>
+    <% end -%>
+  </div>
   <%= render @user %>
   <%= render @posts %>
 </section>
