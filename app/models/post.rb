@@ -6,7 +6,9 @@ class Post < ApplicationRecord
   after_save :update_user_posts_counter
 
   def update_user_posts_counter
+    author.posts_counter = 0 if author.posts_counter.nil?
     author.posts_counter += 1
+    author.save
   end
 
   def most_recent_comments
