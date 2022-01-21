@@ -11,7 +11,7 @@
     </div>
     <h2><%= @post.title %></h2>
     <p><%= @post.text %></p>
-    <%= link_to likes_create_path(post_id: @post.id.to_s), method: :put, class: 'like' do %>
+    <%= link_to likes_create_path(post_id: @post.id.to_s,u_id: @user.id.to_s), method: :put, class: 'like' do %>
       <i class="far fa-heart"></i>
     <% end %>
   </div>
