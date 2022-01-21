@@ -8,5 +8,5 @@
     <%= render partial: "users/post", locals: {post: @user.posts.last} if any_posts?(@user) %>
   </div>
   <%= button_to 'See all posts', user_posts_url(:user_id => @user.id), method: :get, class: 'user-post-buttons'  if any_posts?(@user)%>
-  <%= link_to [:new_user_post] do %><button class="user-post-buttons" >Create new post</button><% end %>
+  <%= link_to(new_user_post_path(user_id: @user.id),class: 'create-post-link') do %><button class="user-post-buttons" >Create new post</button><% end %>
 </section>

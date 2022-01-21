@@ -6,6 +6,6 @@
       <p> <%= post.text %> </p>
       <span>Comments <%= post.comments_counter %> Likes <%= post.likes_counter %></span>
     </div>
-    <div class="comments-div"><%= render post.most_recent_comments %></div>
+    <div class="comment-container"><%= render post.most_recent_comments %></div>
   <% end %>  
 </div>
