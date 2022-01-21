@@ -8,6 +8,6 @@ class LikesController < ApplicationController
     else
       flash.now[:fail] = 'Failed to add new like'
     end
-    redirect_to [:user_post, { id: post.id.to_s, user_id: current_user.id.to_s}]
+    redirect_to [:user_post, { id: post.id.to_s, user_id: current_user.id.to_s }]
   end
 end

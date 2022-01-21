@@ -1,11 +1,10 @@
 .like {
-    background-color: #dc143c46;
-    padding: 0.4em;
-    border-radius: 0.4em;
-    align-self: flex-start;
-  }
+  background-color: #dc143c46;
+  padding: 0.4em;
+  border-radius: 0.4em;
+  align-self: flex-start;
+}
 
-  
-  .like:hover {
-    background-color: #e935597c;
-  }
+.like:hover {
+  background-color: #e935597c;
+}
